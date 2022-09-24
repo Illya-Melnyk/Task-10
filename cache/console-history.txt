@@ -1,0 +1,23 @@
+await contract.executeTransaction("0x658632d7019f8c41ad202c9a01511312c403b8f2239cb45f5503d6ea7382f9e6", "0x2d248cC9408E236463dE9fCF9F942D592FF4F129", 2, {gasPrice:80000000, gasLimit:3000000})
+await contract.voteForTransaction("0x658632d7019f8c41ad202c9a01511312c403b8f2239cb45f5503d6ea7382f9e6", true, {gasPrice:80000000, gasLimit:3000000})
+await contract.promoteTransaction("0x2d248cC9408E236463dE9fCF9F942D592FF4F129", 2, 15)
+await contract.executeTransaction("0x376dc5326c2153e9d76441351b97cfdd347ddc9ca0c97fdd85e54ce56b42e376", "0x547Fc4E40312371Fc530fDC760b2c29f3Fd43f27", 2, {gasPrice:80000000, gasLimit:3000000})
+await contract.executeTransaction("0x376dc5326c2153e9d76441351b97cfdd347ddc9ca0c97fdd85e54ce56b42e376", "0x547Fc4E40312371Fc530fDC760b2c29f3Fd43f27", 2)
+contract.executeTransaction("0x376dc5326c2153e9d76441351b97cfdd347ddc9ca0c97fdd85e54ce56b42e376", "0x547Fc4E40312371Fc530fDC760b2c29f3Fd43f27", 2)
+await contract.voteForTransaction("0x376dc5326c2153e9d76441351b97cfdd347ddc9ca0c97fdd85e54ce56b42e376", true, {gasPrice:80000000, gasLimit:3000000})
+await contract.promoteTransaction("0x547Fc4E40312371Fc530fDC760b2c29f3Fd43f27", 2, 15)
+const contract = await Contract.attach("0xC96321eBB51407Cc07432fd7794B4A8785dCD3F0")
+const Contract = await ethers.getContractFactory("MultiSig");
+await contract.voteForTransaction("0x79bfd19d0eecfa7591220d8bf7585e7b4588ea4372df17d77a540cc5891970b3", true, {gasPrice:80000000, gasLimit:3000000}
+await contract.voteForTransaction("0x79bfd19d0eecfa7591220d8bf7585e7b4588ea4372df17d77a540cc5891970b3", "true", {gasPrice:80000000, gasLimit:3000000})
+await contract.voteForTransaction("0x79bfd19d0eecfa7591220d8bf7585e7b4588ea4372df17d77a540cc5891970b3", "true", {gasPrice:100, gasLimit:3000000})
+await contract.voteForTransaction("0x79bfd19d0eecfa7591220d8bf7585e7b4588ea4372df17d77a540cc5891970b3", true)
+await contract.voteForTransaction("0x79bfd19d0eecfa7591220d8bf7585e7b4588ea4372df17d77a540cc5891970b3", "true" {gasPrice:100, gasLimit:3000000})
+await contract.voteForTransaction("0x79bfd19d0eecfa7591220d8bf7585e7b4588ea4372df17d77a540cc5891970b3", "true")
+await contract.promoteTransaction("0xA44B88E8B89F960F721022089e846d03d7b1Cdf0", 2, 15)
+await contract.promoteTransaction("0xA44B88E8B89F960F721022089e846d03d7b1Cdf0", 2, 12)
+await contract.promoteTransaction("0xA44B88E8B89F960F721022089e846d03d7b1Cdf0", "2", "12")
+await contract.promoteTransaction(0xA44B88E8B89F960F721022089e846d03d7b1Cdf0, 2, 12)
+const contract = await Contract.attach("0xC96321eBB51407Cc07432fd7794B4A8785dCD3F0")
+const Contract = await ethers.getContractFactory("MultiSig");
+.help
